@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1,user-scalable=no">
+  <title>Michigan Lakes</title>
+  <link rel="stylesheet" href="css/miLakes.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.17/esri/themes/dark/main.css" />
+  <link rel="icon" href="media/GlenLake2.png">
+  <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:700|Roboto:700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/40ae125186.js" crossorigin="anonymous"></script> 
+  <script src="https://js.arcgis.com/4.17/"></script>
+  <script src="js/miLakes.js"></script>
+</head>
+<body>
+  <div class='spinner-wrapper'>
+    <div class="spinner"></div>
+  </div>
+  <section class="container">
+    <header>
+      <h1>MICHIGAN LAKES</h1>
+      <nav>
+        <ul>
+          <li><i class="fas fa-info-circle" title="Info" type="button" value="create new window" name="create" id="create" onclick="createWindow()"></i></li>
+          <!-- <li><a href="https://github.com/nealsabin" target="_blank" title="GitHub"><i class="fab fa-github"></i></a></li> -->
+          <li><a href="https://www.linkedin.com/in/neal-sabin-871510b5" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="http://www.nealsabin.com" target="_blank" title="nealsabin.com"><i class="fas fa-home"></i></a></li>
+        </ul>
+      </nav>
+    </header> 
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>About this App</h2>
+          </div>
+          <div class="modal-body">
+            <p>
+              Scroll in for lakes and depth contours (where available) to appear.
+              Clicking on a lake where there are depth contours avaible returns the
+              approximate depth of the lake.<br>
+              <br>
+              Clicking on a County returns various information about lakes within
+              the County.<br>
+              <br>
+              The accuracy and completeness of all data used is not guaranteed.
+              GIS services are refereced from <a href="https://gis-michigan.opendata.arcgis.com/" class="link" target="_blank" title="Michigan GIS Open Data">Michigan GIS Open Data</a>.
+              <br>
+              <hr>
+              This app was designed by Neal Sabin using the ArcGIS Javascript API.
+              To download the project, click <a href="" class="link" target="_blank" title="Download Code">here.</a>
+            </p>
+          </div>
+      </div>
+  </div>
+  </section>
+<div id="viewDiv"></div>
+</body>
+<script src="js/miLakes2.js"></script>
+</html> 
